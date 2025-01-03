@@ -1,0 +1,35 @@
+<!--Practical 61: Example 6-->
+<html>
+    <head><title>Example 6</title></head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Your Details:</legend>
+                <p><label for="name">Name:</label>
+                <input type="text" required="required" placeholder="Jon Truder"></p>
+                <p><label for="email">Email:</label>
+                <input type="email" placeholder="jon1995@hotmail.com" required="required"></p>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>Your Review:</legend>
+                <p>How did you hear about us?
+                    <select name="refferer" id="hear-about">
+                        <option>Google</option>
+                        <option>Friend</option>
+                        <option>Advertisement</option>
+                        <option>Other</option>
+                    </select>
+                </p>
+                <p>Would you visit again?</p>
+                <input type="radio" name="rating" value="yes"><label for="yes">Yes</label>
+                <input type="radio" name="rating" value="no"><label for="no">No</label>
+                <input type="radio" name="rating" value="maybe"><label for="maybe">Maybe</label>
+                <p><label for="comments">Comments:</label></p>
+                <textarea placeholder="Add a comment" name="comment"></textarea>
+                <p><input type="checkbox" name="updates" selected="selected"><label for="updates">Sign me up for email updates</label></p>
+                <input type="submit" name="Submit" value="Submit review">
+            </fieldset>
+        </form>
+    </body>
+</html>
