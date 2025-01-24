@@ -1,0 +1,97 @@
+<!--Practical 99: Styling Links-->
+<!DOCTYPE html>
+<html>
+    <head><title>Styling Links</title></head>
+    <style>
+        h1{
+            font-size: 2em;
+            color: #455025;
+        }
+        .title{
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        a img{
+            vertical-align: middle;
+        }
+        a label{
+            vertical-align: middle;
+            padding: 6px;
+        }
+        *{
+            padding: 10px;
+            font-family:'Times New Roman', Times, serif;
+            background-color: #E8F8E4;
+            color: #242d0a;
+        }        
+        a:link{
+            color:blue;
+        }
+        a:visited{
+            color:rgb(14, 14, 99);
+        }
+        a:hover{
+            color:rgb(19, 156, 180);
+        }
+        a:active{
+            color: rgb(0, 0, 0);
+        }
+        *{
+            font-size: 1.1em;
+        }
+        .emaillist input{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .emaillist input :focus{
+            border-width: 2px;
+            color: grey;
+        }
+        button:focus{
+            background-color: #2e2011;
+            color: #E8F8E4;
+            border:rgb(0,0,0);
+        }
+        button:hover{
+            background-color: #2e2011;
+            color: #E8F8E4;
+            border:rgb(0,0,0);
+        }
+        button{
+            color:White;
+            font-weight:bold;
+            background-color: rgb(105, 36, 36);
+            border: none;
+            cursor: pointer;   
+        }
+        .text{
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: -10px;
+        }
+    </style>
+    <body>
+        <h1 class="title">Contact Me:</h1>
+        <div class="main">
+        <a href="https://linkedin.com/in/priyal-p-439595322" target="_blank"><img src="Logos/LinkedIn.png" height="35px" width="35px"><label for="LinkedIn">Linkedin</label></a>
+        <br/>
+        <a href="https://leetcode.com/u/priyal-it/" target="_blank"><img src="Logos/Leetcode.png" height="35px" width="35px"><label for="Leetcode">Leetcode</label></a>
+        <br/>
+        <a href="https://instagram.com/pariupatel" target="_blank"><img src="Logos/Instagram.png" height="35px" width="35px"><label for="Instagram">Instagram</label></a>
+        <br/>
+        <a href="https://github.com/priyal-it" target="_blank"><img src="Logos/GitHub.png" height="35px" width="35px"><label for="GitHub">GitHub</label></a>
+        <br/>
+    </div>
+    <div class="emaillist">
+        <span class="text">Subscribe to my news-letter:</span><br/>
+        <input type="email" for="News-letter" placeholder="Email Address">
+        <button type="submit">Subscribe</button>
+    </div>
+    </body>
+</html>
+<!--
+LinkedIn
+Leetcode
+Instagram
+GitHub
+-->
