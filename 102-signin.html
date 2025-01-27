@@ -1,0 +1,86 @@
+<!--Practical 102: Example Sign in Page-->
+<!DOCTYPE HTML>
+<html>
+    <head><title>Sign in</title>
+        <style>
+            *{
+                background-color: blueviolet;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .main{
+            position: fixed;
+            padding: 60px;
+            padding-top:30px;
+            background: rgba(255, 255, 255,0.25);
+            backdrop-filter: blur(15px);
+            border: none;
+            border-radius: 20px;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            box-shadow: 0 25px 50px rgba();
+            outline: none;
+        }
+        h1{
+            color: white;
+            border: 10px;
+            padding: 7px;
+            margin-bottom: 10px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: transparent;
+        }
+        input{
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid rgba(255, 255, 255,0.3);
+            color: white;
+        }
+        input::placeholder{
+            color: white;
+        }
+        input:focus{
+            outline: none;
+        }
+        .button{
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 3px;
+            border: none;
+            background-color: white;
+            color: blueviolet;
+            font-weight: bold;
+        }       
+        .button:hover{
+            cursor: pointer;
+        }
+        .links{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background: none;
+        }
+        a{
+            background:none;
+            color: white;
+        }
+        </style></head>
+    <body>
+        <div class="main">
+                <h1>Sign in</h1>
+                <input type="email" id="text" placeholder="Username" size="20">
+                <input type="password" id="password" placeholder="Password" size="20">
+                <input type="submit" for="Login" value="Login" class="button">
+                <div class="links">
+                <a href="">Forgot Password</a>
+                <a href="">Sign up</a>
+                </div>
+        </div>
+    </body>
+
+</html>
