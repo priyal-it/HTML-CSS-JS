@@ -1,0 +1,53 @@
+<!--Practical 100: Attribute selectors-->
+<!DOCTYPE html>
+<html>
+    <head><title>Attribute selectors</title></head>
+    <style>
+        *{
+            background-color: #f7ffef;
+            color:#173405;
+        }
+        /*Existence*/
+        h1[class]{
+            color: #2c4e16;
+        }
+        /*Equality*/
+        p[class=credits]{
+            text-align: right;
+            font-style: italic;
+        }
+        /*Space*/
+        p[class~="Font"]{
+            font-family: sans-serif;
+            text-transform: uppercase;
+            font-size: 0.6em;
+            font-weight: bold;
+            color:#173405;
+            letter-spacing: 0.2em;
+        }
+        /*Prefix*/
+        span[class^="underline"]{
+            text-decoration: underline;
+        }
+        /*suffix*/
+        span[class$="anchor"]:hover{
+            color: blue;
+            cursor: pointer;
+        }
+        span[class$="anchor"]{
+            color:#5a9436;
+        }
+        /*Substring*/
+        h2[class*="title"]{
+            color: #2c4e16;
+        }
+    </style>
+    <body>
+        <h1 class="title1">Briards</h1>
+        <p class="Font space">A heart wrapped in fur</p>
+        <p>The <span class="underline-anchor">briards</span>, or berger de brie, is a large breed of dog traditionally used as a herder and guardian of sheep.</p>
+        <h2 class="title2">Breed History</h2>
+        <p>The briard, which is believed to have originated in France, has been bred for centuries to herd and to protect sheep. The breed was used in the First World War almost to the pont of extinction. Currently the population of briards is slowly recovering. Charlemagne, Napoleon, Thomas Jefferson and Lafayette all owned briards.</p>
+        <p class="credits">by Ivy Duckett</p>
+    </body>
+</html>
