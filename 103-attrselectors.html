@@ -1,0 +1,83 @@
+<!--Practical 103: Attribute Selectors List-->
+<!DOCTYPE html>
+<html>
+    <head><title>Attribute Selectors List</title>
+    <style>
+        *{
+            background-color:rgb(235, 26, 144);
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            margin-top: 70px;
+            font-size: small;
+        }
+        table{
+            background-color: rgb(255, 230, 244);
+            position: fixed;
+            padding:20px;
+            width: 500px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255,0.25);
+            backdrop-filter: blur;
+        }
+        th{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            padding: 10px;
+        }
+        .first-row{
+            border-bottom: 2px solid  rgb(255, 255, 255);
+        }
+        th,td{
+            background-color: rgba(255, 255, 255,0.25);
+            color: rgb(255, 255, 255);
+            text-align: left;
+        }
+        td{
+            font-family: monospace;
+            font-size: large;
+        }
+    </style></head>
+    <body>
+        <table>
+            <tr>
+                <th class="first-row">selector</th>
+                <th class="first-row">syntax</th>
+                <th class="first-row">example</th>
+            </tr>
+            <tr>
+                <th>existence</th>
+                <td>tag[attr]</td>
+                <td>p[class]</td>
+            </tr>
+            <tr>
+                <th>equality</th>
+                <td>tag[attr="val"]</td>
+                <td>p[class="d"]</td>
+            </tr>
+            <tr>
+                <th>space</th>
+                <td>tag[attr~="val"]</td>
+                <td>p[class~="d"]</td>
+            </tr>
+            <tr>
+                <th>prefix</th>
+                <td>tag[attr^="val"]</td>
+                <td>p[class^="d"]</td>
+            </tr>
+            <tr>
+                <th>substring</th>
+                <td>tag[attr*="val"]</td>
+                <td>p[class*="d"]</td>
+            </tr>
+            <tr>
+                <th>suffix</th>
+                <td>tag[attr$="val"]</td>
+                <td>p[class$="d"]</td>
+            </tr>
+        </table>
+    </body>
+</html>
