@@ -1,0 +1,58 @@
+<!--Practical 105: Limiting Width-->
+<!DOCTYPE html>
+<html>
+    <head><title>Limiting Width</title>
+    <style>
+        table.box{
+            min-width: 450px;
+            max-width: 650px;
+        }
+        th{
+            color: rgb(46, 174, 216);
+            border-bottom: 2px solid rgb(46, 174, 216);
+        }
+        img{
+            height: 6em;
+            width: 7.5em;
+        }
+        .description{
+            vertical-align: top;
+            text-align: justify;
+        }
+        .price{
+            width: 15%;
+            vertical-align: top;
+        }
+        td[class="description"],td[class="price"]{
+            padding: 10px;
+        }
+        td[class="description"]::first-letter{
+            font-size: 200%;
+            font-weight: bold;
+        }
+    </style></head>
+    <body>
+        <table>
+            <tr>
+                <th>Photo</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td class="images"><img src="images/6.png" alt="Rhodes Piano"></td>
+                <td class="description">The Rhodes piano is an electro mechanical piano, invented by Herold Rhodes during the fifties and later manufactured in a number of models, first in collaboration with Fender and after 1965 by CBS. It employs a piano-like keyboard with hammers that hit small metal lines simplified by electromagnetic pickups.</td>
+                <td class="price">$1400</td>
+            </tr>
+            <tr>
+                <td class="images"><img src="images/7.png" alt="Wurlitzer Piano"></td>
+                <td class="description">The Wurlitzer electric piano is an electro-mechanical piano, created by the Rudolph Wurlitzer Company of Mississippi. The Wurlitzer company itself never called the instrument an "electric piano", instead inventing the phrase "Electronic Piano" and using this as a trademark throughout the production of the instrument. It employs a piano-like keyboard with hammers that hit small metal lines, amplified by electromagnetic pickups.</td>
+                <td class="price">$1600</td>
+            </tr>
+            <tr>
+                <td class="images"><img src="images/8.png" alt="Clavinet Piano"></td>
+                <td class="description">A Clavinet is an electronically amplified clavichord manufactured by the Hohner company. Each key uses a rubber tip to perform a hammer on a string. Its distinctive bright staccato sound is often compared to that of an electric-guitar. Various models were produced over the years, including the models I, II L C D6 and E7</td>
+                <td class="price">$1200</td>
+            </tr>
+        </table>
+    </body>
+</html>
