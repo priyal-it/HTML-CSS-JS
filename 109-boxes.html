@@ -1,0 +1,56 @@
+<!--Practical 109: Margin and Padding-->
+<!DOCTYPE html>
+<html>
+    <head><title>Margin and Padding</title>
+    <style>
+        div{
+            width: 250px;
+            text-align: justify;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        .first, .second, .third, .fourth{
+            border: 3px solid black;
+        }
+        div[class="main"]{
+            display: flex;
+            flex-direction: row;
+        }        
+        .one, .two{
+            margin: 20px;
+        }
+        h2{
+            color: rgb(63, 51, 167);
+            border-bottom: 2px solid rgb(30, 30, 117);
+            text-align: left!important;
+        }
+    </style></head>
+    <body>
+        <div class="main">
+            <div class="one">
+            <h2>Without Margin and Padding</h2>
+        <div class="first">
+            <h1>Heading1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam facere dolore nulla animi quo voluptatibus ea dignissimos nostrum voluptates velit adipisci a, sed numquam repellat, corporis modi incidunt. Minima, necessitatibus!</p>
+        </div>
+        <div class="second">
+            <h1>Heading2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam facere dolore nulla animi quo voluptatibus ea dignissimos nostrum voluptates velit adipisci a, sed numquam repellat, corporis modi incidunt. Minima, necessitatibus!</p>
+        </div>
+    </div class="two">
+    <div class="two">
+        <h2>With Margin and Padding</h2>
+        <div class="third" style="margin: 10px">
+            <h1 style="padding: 10px">Heading1</h1>
+            <p style="padding: 10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam facere dolore nulla animi quo voluptatibus ea dignissimos nostrum voluptates velit adipisci a, sed numquam repellat, corporis modi incidunt. Minima, necessitatibus!</p>
+        </div>
+        <div class="fourth" style="margin: 10px;">
+            <h1 style="padding: 10px">Heading2</h1>
+            <p style="padding: 10px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam facere dolore nulla animi quo voluptatibus ea dignissimos nostrum voluptates velit adipisci a, sed numquam repellat, corporis modi incidunt. Minima, necessitatibus!</p>
+        </div>
+        </div>   
+        </div>
+    </body>
+</html>
