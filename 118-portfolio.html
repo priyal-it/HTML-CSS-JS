@@ -1,0 +1,96 @@
+<!--Practical 118: Portfolio-->
+<!DOCTYPE html>
+<html>
+    <head><title>Portfolio</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        html,body{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            background-color: rgb(34, 31, 31);
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+        img{
+            height: 180px;
+            width: 180px;
+            border-radius: 90px;
+            margin: 10px auto;
+            display: block;
+            box-shadow: -2px 2px 4px rgba(37, 33, 33, 0.775);
+            border: 1px solid rgba(37, 33, 33, 0.775);
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        .main{
+            width: 700px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(145, 145, 145);
+            margin: 20px auto;
+            padding: 10px;
+            background-color: white;
+            text-align: center;
+            flex: 1;
+        }
+        h1{
+            color: rgb(34, 31, 31); 
+        }
+        p{
+            padding: 10px;
+        }
+        button{
+            padding: 10px;
+            margin: 10px;
+            margin-bottom: 20px;
+            background-color: rgb(0, 94, 255);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: rgb(16, 16, 189);
+        }
+        footer{
+            background-color: rgb(34, 31, 31);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .text{
+            color: gray;
+            font-weight: lighter;
+            font-size: 0.9em;
+            width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+    </head>
+    <body>
+        <header>Portfolio</header>
+        <div class="main">
+            <img src="images/pfp.jpg" alt="Profile Picture">
+            <h1>Priyal Patel</h1>
+            <p>Web Designer | Developer | Coder</p>
+            <p class="text">Computer science and Data science student with a passion for Cyber Security. Sometimes I find coding interesting.</p>
+            <div>
+                <button>View Projects</button>
+                <button>View Resume</button>
+            </div>
+        </div>
+        <footer>Copyright &copy; 2025 Priyal Patel</footer>
+    </body>
+</html>
