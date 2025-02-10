@@ -1,0 +1,29 @@
+<!--Practical 120: Border Images-->
+<!DOCTYPE html>
+<html>
+    <head><title>Border Images</title>
+    <style>
+        p{
+            height: 100px;
+            width: 400px;
+            margin: 30px auto;
+            border: 10px solid transparent;
+        }
+        .one{
+            margin-top: 60px;
+            border-image-source: url(images/9.png);
+            border-image-slice: 27;
+            border-image-repeat: stretch;
+        }
+        .two{
+            border-image-source: url(images/9.png);
+            border-image-slice: 27;
+            border-image-repeat: round;
+        }
+    </style>
+    </head>
+    <body>
+        <p class="one" style="color:chocolate; text-align: center; font-size: 3em; padding: 10px;">Priyal</p>
+        <p class="two" style="color:chocolate; text-align: center; font-size: 3em; padding: 10px;">Priyal</p>
+    </body>
+</html>
