@@ -1,0 +1,106 @@
+<!--Practical 124: Example 11-->
+<!DOCTYPE html>
+<html>
+    <head><title>Example 11</title>
+        <style>
+            body{
+            font-family: 'Courier New', Courier, monospace;
+            width: 80%;
+            margin: 0 auto;
+        }
+        p[class="heading"]{
+            text-transform: uppercase;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            width: auto;
+            text-align: center;
+            margin: 20px auto;
+        }
+        span{
+            display: block;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        span[class="big"]{
+            width: 100%;
+            font-size: 50px;
+        }
+        span[class="small2"]{
+            justify-content: space-around;
+            width: 100%;
+            font-size: 18px;
+            letter-spacing: 0.5em;
+        }
+        .navbar{
+            display: flex;
+            flex-direction: row;
+        }
+        a{
+            text-transform: uppercase;
+            margin: 10px auto;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 0.2em;
+            text-decoration: none;
+        }
+        a:link{
+            color: brown;
+        }
+        a:hover{
+            cursor: pointer;
+            color: blue;
+        }
+        a:visited{
+            color: rgb(157, 27, 157);
+        }
+        hr{
+            background-color: rgb(7, 33, 93);
+            height: 3px;
+            border: none;
+            border-radius: 1em;
+        }
+        .pianos{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height:350px;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        img{
+            flex: 1;
+            min-width: 0;
+        }
+        .text{
+            margin: 10px auto;
+            font-size: 17px;
+            font-weight: bold;
+            letter-spacing: 0.2em;
+            word-spacing: 0.5em;
+            justify-content: space-between;
+            text-align: center;
+        }
+</style>
+    </head>
+    <body>
+        <p class="heading"><span class="small">the</span><span class="big">analog</span><span class="small2">specialists</span></p>
+        <hr/>
+        <div class="navbar">
+            <a href="index.html" for="Home">Home</a>
+            <a href="products.html" for="for sale">For sale</a>
+            <a href="repairs.html" for="repairs">Repairs</a>
+            <a href="about.html" for="about us">About</a>
+            <a href="contact.html" for="contact us>">Contact</a> 
+        </div>
+        <hr/>
+        <div class="pianos">
+            <img src="images/6.png" alt="piano1">
+            <img src="images/7.png" alt="piano2">
+            <img src="images/8.png" alt="piano3">
+        </div>
+        <div class="text">
+            We specialise in the sales and repair of classic keyboards, in particular the Fender Rhodes, Wurlitzer EP200, and Hohner Clavinet.
+        </div>
+    </body>
+</html>
