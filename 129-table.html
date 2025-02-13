@@ -1,0 +1,79 @@
+<!--Practical 129: Table Properties-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Table Properties
+        </title>
+        <style>
+            body{
+                font-family: sans-serif;
+                padding: 20px;
+                margin: 50px auto;
+                width: 600px;
+                border: 5px solid rgb(146, 91, 20);
+                border-radius: 0.8em;
+            }
+            h1{
+                color: rgb(167, 119, 57);
+                text-align: center;
+            }
+            th{
+                color: rgb(146, 91, 20);
+                border-bottom: 2px solid #111111;
+                text-transform: uppercase;
+                font-size: 90%;
+                letter-spacing: 0.1em;
+                text-align: left;
+                border-top: 1px solid #999
+            }
+            table{
+                margin: 10px auto;
+            }
+            .number{
+                text-align: right;
+            }
+            .one{
+                background-color: #efefef;
+            }
+            .two{
+                background-color: #c3e6e5;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>First Edition Auctions</h1>
+        <table>
+            <tr class="headings">
+                <th>author</th>
+                <th>title</th>
+                <th>reserve price</th>
+                <th>current bid</th>
+            </tr>
+            <tr class="one">
+                <td>E.E. Cummings</td>
+                <td>Tulips & Chimneys</td>
+                <td class="number">$2,000.00</td>
+                <td class="number">$2,642.50</td>
+            </tr>
+            <tr class="two">
+                <td>Charles d'Orleans</td>
+                <td>Poemes</td>
+                <td class="number"></td>
+                <td class="number">$5,866.00</td>
+            </tr>
+            <tr class="one">
+                <td>T.S. Eliot</td>
+                <td>Poems 1909-1925</td>
+                <td class="number">$12,500.00</td>
+                <td class="number">$8,499.35</td>
+            </tr>
+            <tr class="two">
+                <td>Sylvia Plath</td>
+                <td>The Colossus</td>
+                <td class="number"></td>
+                <td class="number">$1,031.72</td>
+            </tr>
+        </table>
+    </body>
+</html>
