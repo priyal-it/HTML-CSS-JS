@@ -1,0 +1,63 @@
+<!--Practical 131: Border Spacing and Collapse-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Border Spacing and Collapse
+        </title>
+        <style>
+            body{
+                display: flex;
+                flex-direction: row;
+            }
+            table{
+                margin: 20px;
+            }
+            td{
+                border: 2px solid black;
+                padding: 10px;
+            }
+            table.one{
+                border-spacing: 5px 15px;
+            }
+            table.two{
+                border-spacing: 10px;
+            }
+            table.three{
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="one">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td></td>
+            </tr>
+        </table>
+        <table class="two">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td></td>
+            </tr>
+        </table>
+        <table class="three">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>
