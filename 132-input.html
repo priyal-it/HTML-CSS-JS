@@ -1,0 +1,86 @@
+<!--Practical 132: Styling Text Inputs-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Styling Text Inputs
+        </title>
+        <style>
+            *{
+                background-color: #f2ffff;
+            }
+            body{
+                width: 300px;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px black;
+                background-color: white;
+            }
+            .main{
+                margin: 50px auto;
+            }
+            input{
+                padding-top: 0.2em;
+                padding-bottom: 0.2em;
+                font-size: 110%;
+                color: #5a5854;
+                border: 1px solid #bdbdbd;
+                border-radius: 5px;
+                padding: 5px 5px 5px 30px;
+                display: block;
+                background-position: 0.4em 0.5em;
+                background-repeat: no-repeat;
+                background-color: #f2ffff;
+                margin: 0 auto 1em auto;
+            }
+            input::placeholder{
+                font-size: 0.8em;
+            }
+            input:focus{
+                background-color: #ffffff;
+                border: 1px solid #b1e1e4;
+            }
+            input:focus::placeholder{
+                color: transparent;
+            }
+            input[type="email"]{
+                background-image: url(Logos/email.png);
+                background-size: 1em;
+                padding-left: 2em;
+            }
+            input[type="text"]{
+                background-image: url(Logos/twitter.png);
+                background-size: 1em;
+                padding-left: 2em;
+            }
+            input[type="url"]{
+                background-image: url(Logos/web.png);
+                background-size: 1em;
+                padding-left: 2em;
+            }
+            h1{
+                padding: 0.2em 0 0 1em;
+                color: rgb(81, 81, 81);
+            }
+            input[type="button"]{
+                padding: 0.5em 0.6em;
+                background-color: #5a5854;
+                border: none;
+                color: white;
+                margin-top: 0.9em;
+                border-radius: 0.3;
+                letter-spacing: 0.04em;
+                font-size: 0.9em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Enter Details</h1>
+        <div class="main">
+            <input type="email" placeholder="Enter your Email Address">
+            <input type="text" placeholder="Twitter (X) Username">
+            <input type="url" placeholder="Website">
+        </div>
+            <input type="button" value="Continue">
+    </body>
+</html>
