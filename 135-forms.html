@@ -1,0 +1,85 @@
+<!--Practical 135: Aligning Form Controls-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Aligning Form Controls
+        </title>
+        <style>
+            body{
+                border: 1px solid gray;
+                border-radius: 5px;
+                box-shadow: 0 0 10px gray;
+                display: flex;
+                flex-direction: column;
+                width: 30%;
+                margin: 30px auto;
+                padding: 20px;
+            }
+            input{
+                margin: 10px;
+            }
+            label{
+                width: 100px;
+                text-align: right;
+            }
+            div{
+                border-bottom: 1px solid #efefef;
+            }
+            .register{
+                display: flex;
+                justify-content: flex-end;
+            }
+            button:hover{
+                cursor: pointer;
+            }
+            .gender label{
+                width: auto;
+            }
+            button{
+                background: linear-gradient(to bottom, rgb(173, 29, 173), rgb(100, 8, 119));
+                color: white;
+                border: none;
+                border-radius: 3px;
+                padding: 7px;
+                margin-top: 10px;
+            }
+            .main{
+                margin: 0 auto;
+            }
+            input[type="text"]:focus{
+                outline: none;
+            }
+            h2{
+                font-weight: 400;
+            }
+            input[type="text"]{
+                border: none;
+                border-bottom: 2px solid rgba(128, 128, 128,0.7);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <h2>Enter Details:</h2>
+            <div class="name">
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter Name:" id="name">
+            </div>
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="text" placeholder="Enter Email" id="email">
+            </div>
+            <div class="gender">
+                <label>Gender:</label>
+                <input type="radio" value="male" id="gender_m" name="gender">
+                <label for="gender_m">Male</label>
+                <input type="radio" id="gender_f" name="gender" value="female">
+                <label for="gender_f">Female</label>
+            </div>
+        </div>
+        <div class="register">
+            <button>Register</button>
+        </div>
+    </body>
+</html>
