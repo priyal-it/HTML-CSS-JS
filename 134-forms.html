@@ -1,0 +1,72 @@
+<!--Practical 134: Styling Field Sets-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Styling Field Sets
+        </title>
+        <style>
+            body{
+                display: flex;
+            }
+            fieldset{
+                text-align: right;
+                border: 0.1em solid rgba(203, 203, 203,0.7);
+                border-radius: 0.5em; 
+                box-shadow: 0 0 0.5em gray;
+            }
+            div{
+                display: flex;
+                flex-direction: row;
+                padding: 0.5em;
+                margin:0.5em;
+            }
+            input[type="text"]{
+                border: none;
+                border-bottom: 1px solid rgba(128, 128, 128,0.6);
+                margin-left: 0.5em;
+            }
+            input[type="text"]:focus{
+                outline: none;
+            }
+            legend{
+                text-transform: uppercase;
+                background-color: steelblue;
+                background: linear-gradient(to bottom,rgb(114, 157, 218) 5%,rgb(70, 112, 180) 95%);
+                box-shadow: -0.1em 0.1em 0.2em gray;
+                color: white;
+                padding: 0.3em;
+                border-radius: 0.2em;
+                text-align: left;
+            }
+            button{
+                color: white;
+                background: linear-gradient(to bottom, rgb(84, 84, 200), rgb(33, 33, 142));
+                border: none;
+                border-radius: 0.2em;
+                font-family: sans-serif;
+                margin: 0.3em;
+                padding: 0.4em;
+            }
+            .main{
+                margin: 2em auto;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="main">
+            <fieldset>
+                <legend>Newsletter</legend>
+                <div class="name">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" placeholder="Enter Name">
+                </div>
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" placeholder="Enter Email">
+                </div>
+                <button value="Subscribe">Subscribe</button>
+            </fieldset>
+        </div>
+    </body>
+</html>
