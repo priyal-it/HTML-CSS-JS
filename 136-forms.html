@@ -1,0 +1,95 @@
+<!--Practical 136: Cursor Styles-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Cursor Styles
+        </title>
+        <style>
+            body{
+                margin: 30px auto;
+                border: 2px solid rgba(128, 128, 128,0.5);
+                border-radius: 10px;
+                box-shadow: 0 0 10px gray;
+                width: 250px;
+            }
+            button{
+                display: block;
+                padding: 10px;
+                margin: 10px 0 10px 20px;
+                width: 100px;
+                background: linear-gradient(to bottom, rgb(96, 38, 182), rgb(41, 8, 139));
+                color: white;
+                border: none;
+                border-radius: 5px;
+            }
+            h1{
+                font-weight: 400;
+                margin: 20px;
+            }
+            button:focus{
+                background: linear-gradient(to bottom, rgb(81, 30, 157), rgb(32, 7, 109));
+            }
+            button:hover{
+                background: linear-gradient(to bottom, rgb(81, 30, 157), rgb(32, 7, 109));
+            }
+            .auto{
+                cursor: auto;
+            }
+            .crosshair{
+                cursor: crosshair;
+            }
+            .default{
+                cursor: default;
+            }
+            .pointer{
+                cursor: pointer;
+            }
+            .move{
+                cursor: move;
+            }
+            .text{
+                cursor: text;
+            }
+            .wait{
+                cursor: wait;
+            }
+            .help{
+                cursor: help;
+            }
+            .image{
+                cursor: url(images/11cursor.cur),auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cursor Styles:</h1>
+        <div>
+            <button class="auto">Auto</button>
+        </div>
+        <div>
+            <button class="crosshair">Crosshair</button>
+        </div>
+        <div>
+            <button class="default">Default</button>
+        </div>
+        <div>
+            <button class="pointer">Pointer</button>
+        </div>
+        <div>
+            <button class="move">Move</button>
+        </div>
+        <div>
+            <button class="text">Text</button>
+        </div>
+        <div>
+            <button class="wait">Wait</button>
+        </div>
+        <div>
+            <button class="help">Help</button>
+        </div>
+        <div>
+            <button class="image">Image</button>
+        </div>
+    </body>
+</html>
