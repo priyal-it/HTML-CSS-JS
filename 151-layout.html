@@ -1,0 +1,70 @@
+<!--Practical 151: Liquid Layout-->
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>Liquid Layout</title>
+        <style>
+            body{
+                width: 90%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .nav, .feature, #footer{
+                margin: 1%;
+            }
+            .content{
+                overflow: auto;
+            }
+            .col1, .col2, .col3{
+                background-color: #efefef;
+                width: 31.3%;
+                float: left;
+                margin: 1%;
+            }
+            li{
+                display: inline;
+                padding: 0.5em;
+            }
+            .nav, #footer{
+                background-color: #efefef;
+                padding: 0.5em;
+            }
+            .feature, .col1, .col2, .col3{
+                background-color: #efefef;
+                margin-bottom: 1em;
+                height: 10em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <h1>Logo</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="feature">
+                <p>Feature</p>
+            </div>
+            <div class="col1">
+                <p>Column One</p>
+            </div>
+            <div class="col2">
+                <p>Column Two</p>
+            </div>
+            <div class="col3">
+                <p>Column Three</p>
+            </div>
+        </div>
+        <div id="footer">
+            <p>&copy; Copyright 2025</p>
+        </div>
+    </body>
+</html>
