@@ -1,0 +1,19 @@
+/* Practical 153: typography.css for @import*/
+*{
+    font-family: sans-serif;
+    color: #666666;
+}
+.info_heading{
+    border-bottom: 3px solid rgba(108, 108, 108,0.3);
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+.info{
+    color: rgb(21, 74, 139);
+    margin-top: 0;
+    font-weight: bold;
+}
+.info_detailed{
+    font-size: smaller;
+}
