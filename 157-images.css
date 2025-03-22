@@ -1,0 +1,17 @@
+/* Style sheet for Practical 157 */
+body{
+    width: 800px;
+    margin: 0 auto;
+}
+img.medium{
+    height: 250px;
+    width: 250px;
+}
+img.align-left{
+    float: left;
+    margin-right: 10px;
+}
+img.align-right{
+    float: right;
+    margin-left: 10px;
+}
