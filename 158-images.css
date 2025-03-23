@@ -1,0 +1,13 @@
+/* Style sheet for Practical 158 */
+body{
+    width: 800px;
+    margin: 0 auto;
+}
+img.medium{
+    height: 250px;
+    width: 250px;
+}
+img.align-center{
+    display: block;
+    margin: 0 auto;
+}
