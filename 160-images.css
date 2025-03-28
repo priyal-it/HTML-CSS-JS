@@ -1,0 +1,6 @@
+/* Style sheet for Practical 160 */
+body{
+    color:white;
+    background-image: url(images/pattern.gif);
+    padding: 1em;
+}
