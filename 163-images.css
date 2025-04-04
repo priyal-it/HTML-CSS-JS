@@ -1,0 +1,9 @@
+/* Style sheet for Practical 163 */
+body{
+    background-image: url(images/tulip.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-position: 50% 50%; */
+    height: 100vh;
+}
+/* You can also represent the distance from the top-left corner of the browser window (or containing box). The top left corner is equal to 0% 0%. */
