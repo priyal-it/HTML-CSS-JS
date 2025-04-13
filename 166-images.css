@@ -1,0 +1,6 @@
+/* Style sheet for Practical 166 */
+body{
+    background-color: #66cccc;
+    background: linear-gradient(#66cccc, #336666);
+    height: 100vh;
+}
