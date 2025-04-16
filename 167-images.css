@@ -1,0 +1,23 @@
+/* Style sheet for Practical 167 */
+/* Winky Rough */
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+body{
+    background: url(images/contrast.jpg) no-repeat center center fixed;
+    width: 60%;
+    margin: 0 auto;
+    font-family: "Winky Rough", sans serif;
+}
+.one{
+    color: white;
+    font-size: 500%;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: black 5px 5px 10px;
+}
+.two{
+    color: black;
+    font-size: 500%;
+    font-weight: bold;
+    text-align: right;
+    text-shadow: white -5px 5px 10px;
+}
