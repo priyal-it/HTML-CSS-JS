@@ -1,0 +1,14 @@
+/* Style sheet for Practical 172 */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+body{
+    background-color: lightblue; 
+}
+section a{
+    display: block;
+}
+h2{
+    font-family: Luckiest Guy, Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3em;
+    color: orangered;
+    text-shadow: -3px 3px yellow;
+}
