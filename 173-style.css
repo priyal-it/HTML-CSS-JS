@@ -1,0 +1,29 @@
+/* Style sheet for Practical 173 */
+body{
+    margin: 0;
+    background-color: lightcoral;
+    color: white;
+    text-shadow: 1px 1px 0px darkmagenta;
+}
+a{
+    text-shadow: none;
+    color: white;
+    padding: 10px;
+}
+.main-heading h2{
+    margin-top: 0;
+    padding: 10px;
+}
+h2{
+    text-shadow: none;
+    font-size: 30px;
+    color: darkmagenta;
+
+}
+.main-heading{
+    background-image: url(images/headingbg.png);
+    background-repeat: repeat-x;
+}
+.contact-details{
+    padding: 10px;
+}
